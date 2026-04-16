@@ -1,4 +1,4 @@
-const validadePassword = require('../src/passwordValidator');
+const validatePassword = require('../src/Service/passwordValidator');
 
 describe('validar senhas', () => {
 
@@ -8,7 +8,7 @@ describe('validar senhas', () => {
         const password = '1234567';
 
         // Act
-        const result = validadePassword(password);
+        const result = validatePassword(password);
         
         // Assert
         expect(result).toBe(false);
