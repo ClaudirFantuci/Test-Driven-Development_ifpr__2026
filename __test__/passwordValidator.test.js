@@ -35,4 +35,13 @@ describe('validar senhas', () => {
         expect(result).toBe(false);
     });
 
+    test('deve te um numero', () => {
+        // Arrange
+        const password = 'Maedaesd';
+        // Act
+        const result = validatePassword(password);
+        // Assert
+        expect(result).toBe(false);
+    });
+
 })
