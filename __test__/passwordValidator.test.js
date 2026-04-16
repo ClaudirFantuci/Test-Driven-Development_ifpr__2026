@@ -14,4 +14,15 @@ describe('validar senhas', () => {
         expect(result).toBe(false);
     });
 
+    test('deve ter pelo menus uma maiscula', () => {
+        // Arrange
+        const password = '12345678';
+
+        // Act
+        const result = validatePassword(password);
+
+        // Assert
+        expect(result).toBe(false);
+    });
+
 })
