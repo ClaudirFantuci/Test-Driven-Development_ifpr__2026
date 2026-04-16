@@ -14,6 +14,9 @@ function validatePassword(password) {
     if (!/[^a-zA-Z0-9]/.test(password)) {
         return false;
     }
+    if (/\s/.test(password)) {
+        return false;
+    }   
     return true;
 }
 
