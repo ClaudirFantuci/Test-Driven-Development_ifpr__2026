@@ -44,4 +44,13 @@ describe('validar senhas', () => {
         expect(result).toBe(false);
     });
 
+    test('deve ter caracter especial', () => {
+        // Arrange
+        const password = 'Maedaesd1';
+        // Act
+        const result = validatePassword(password);
+        // Assert
+        expect(result).toBe(false);
+    });
+
 })
