@@ -24,5 +24,15 @@ describe('validar senhas', () => {
         // Assert
         expect(result).toBe(false);
     });
+    test('deve ter pelo menus uma minuscula', () => {
+        // Arrange
+        const password = 'M2345678';
+
+        // Act
+        const result = validatePassword(password);
+
+        // Assert
+        expect(result).toBe(false);
+    });
 
 })
