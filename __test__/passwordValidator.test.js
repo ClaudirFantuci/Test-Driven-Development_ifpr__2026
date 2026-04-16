@@ -52,5 +52,14 @@ describe('validar senhas', () => {
         // Assert
         expect(result).toBe(false);
     });
+    
+    test('nao pode ter espaços', () => {
+        // Arrange
+        const password = 'Maedaes d1!';
+        // Act
+        const result = validatePassword(password);
+        // Assert
+        expect(result).toBe(false);
+    });
 
 })
